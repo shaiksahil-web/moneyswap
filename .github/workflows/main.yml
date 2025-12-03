@@ -1,4 +1,4 @@
-name: Build and Push Frontend & Backend (v1)
+name: Build and Push Frontend & Backend (latest)
 
 on:
   push:
@@ -20,27 +20,27 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       # ---------------------------------------------------------
-      # BACKEND BUILD & PUSH (v1)
+      # BACKEND BUILD & PUSH (latest)
       # ---------------------------------------------------------
-      - name: Build Backend Image (v1)
+      - name: Build Backend Image (latest)
         run: |
           docker build --no-cache \
-            -t shaiksahil123/moneyswapbackend:v1 \
+            -t shaiksahil123/moneyswapbackend:latest \
             ./cashswap-backend
 
-      - name: Push Backend Image (v1)
+      - name: Push Backend Image (latest)
         run: |
-          docker push shaiksahil123/moneyswapbackend:v1
+          docker push shaiksahil123/moneyswapbackend:latest
 
       # ---------------------------------------------------------
-      # FRONTEND BUILD & PUSH (v1)
+      # FRONTEND BUILD & PUSH (latest)
       # ---------------------------------------------------------
-      - name: Build Frontend Image (v1)
+      - name: Build Frontend Image (latest)
         run: |
           docker build --no-cache \
-            -t shaiksahil123/moneyswapfrontend:v1 \
+            -t shaiksahil123/moneyswapfrontend:latest \
             ./cashswap-frontend
 
-      - name: Push Frontend Image (v1)
+      - name: Push Frontend Image (latest)
         run: |
-          docker push shaiksahil123/moneyswapfrontend:v1
+          docker push shaiksahil123/moneyswapfrontend:latest
