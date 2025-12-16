@@ -29,3 +29,111 @@ View and filter all public requests
 | Monitoring    | Prometheus, Grafana |
 | CI/CD         | GitHub Actions      |
 
+**4. How to Deploy on Kubernetes**
+
+Step 1: Create Kubernetes Cluster
+
+Provision EC2 instances (1 Master, 1+ Worker)
+
+Install Docker, kubeadm, kubelet, kubectl
+
+Initialize cluster using kubeadm
+
+Step 2: Deploy Backend
+kubectl apply -f backend-deployment.yaml
+kubectl apply -f backend-service.yaml
+
+
+Backend exposed via:
+
+http://<NODE-IP>:30080
+
+Step 3: Deploy Frontend
+kubectl apply -f frontend-deployment.yaml
+kubectl apply -f frontend-service.yaml
+
+
+Frontend exposed via:
+
+http://<NODE-IP>:30081
+
+Step 4: Verify Pods & Services
+kubectl get pods
+kubectl get svc
+
+**5. CI/CD Workflow (GitHub Actions + Docker Hub)**
+
+CI/CD Flow
+
+Code pushed to main branch
+
+GitHub Actions workflow triggers
+
+Docker images built using --no-cache
+
+Images pushed to Docker Hub
+
+Kubernetes pulls latest images
+
+Docker Images
+Service	Image
+Frontend	shaiksahil123/moneyswapfrontend:latest
+Backend	shaiksahil123/moneyswapbackend:latest
+
+**6. HPA + Load Testing**
+
+Horizontal Pod Autoscaler (HPA)
+
+HPA configured for Frontend
+
+Scales pods based on CPU utilization
+
+Automatically increases/decreases replicas
+
+Example:
+
+kubectl autoscale deployment frontend --cpu-percent=20 --min=1 --max=10
+
+Load Testing
+
+Load generated using BusyBox:
+
+kubectl run loadgen --image=busybox --restart=Never -- \
+sh -c "while true; do wget -q -O- http://frontend-service; done"
+
+Observed Behavior:
+
+CPU usage increases
+
+HPA scales frontend pods
+
+Pods scale down after load stops
+
+**7. Monitoring Setup (Prometheus + Grafana)**
+
+Tools Used
+
+Prometheus (metrics collection)
+
+Grafana (visualization)
+
+Installed Using Helm
+
+kube-prometheus-stack
+
+Grafana exposed via NodePort
+
+Access Grafana:
+
+http://<NODE-IP>:32000
+
+Metrics Monitored
+
+Pod CPU usage
+
+Pod memory usage
+
+HPA scaling events
+
+Node health
+
