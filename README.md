@@ -1,11 +1,5 @@
-Overview
+Ovrviwe
+MoneySwap is a cloud-native, microservices-based application designed to facilitate user authentication and cash exchange requests.
+The application is built using React (Frontend) and Node.js (Backend), containerized with Docker, deployed on Kubernetes, and integrated with AWS serverless services.
 
-CashSwap is a simple money exchange platform where users can:
-
-Login using OTP
-
-Register their profile
-
-Create money “Need Cash / Have Cash” requests
-
-View and filter all public requests
+The project demonstrates end-to-end DevOps practices, including CI/CD, container orchestration, autoscaling, monitoring, and cloud integration.
