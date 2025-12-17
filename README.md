@@ -174,8 +174,8 @@ Screenshots Included:
 
 **Results:**
 
-Successful autoscaling
+**Successful autoscaling**
+<img width="924" height="291" alt="image" src="https://github.com/user-attachments/assets/8f6bb1de-a7f9-4488-b586-fe571f694cf0" />
 
-Zero downtime during load
-
-Metrics visible in Grafana
+**Metrics visible in Grafana**
+<img width="1600" height="744" alt="image" src="https://github.com/user-attachments/assets/bc8b2e4e-8b4a-473a-be81-c7fe350d37cd" />
