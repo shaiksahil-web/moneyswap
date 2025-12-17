@@ -149,6 +149,9 @@ Grafana dashboards
 
 Frontend UI
 
+<img width="1920" height="888" alt="image" src="https://github.com/user-attachments/assets/2a227671-7a1e-47bf-b1aa-8f5eedf0a72c" />
+
+
 GitHub Actions pipeline success
 
 Docker Hub images
