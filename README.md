@@ -144,27 +144,22 @@ Screenshots Included:
 Kubernetes pods scaling up/down
 
 HPA status
-
 <img width="1324" height="84" alt="image" src="https://github.com/user-attachments/assets/b68ed3c2-9f44-4f14-bf0e-39514ee88040" />
 
 
 Grafana dashboards
-
 <img width="1920" height="894" alt="image" src="https://github.com/user-attachments/assets/bc1801e1-2ef6-4024-83fb-670f6a3978b8" />
 
 
 Frontend UI
-
 <img width="1920" height="888" alt="image" src="https://github.com/user-attachments/assets/2a227671-7a1e-47bf-b1aa-8f5eedf0a72c" />
 
 
 GitHub Actions pipeline success
-
 <img width="1920" height="886" alt="image" src="https://github.com/user-attachments/assets/87d0f0b0-0b3c-4538-b287-431c58691635" />
 
 
 Docker Hub images
-
 <img width="1920" height="887" alt="image" src="https://github.com/user-attachments/assets/60bf06b1-9ff9-4a1e-b23e-662e3388ff22" />
 
 
