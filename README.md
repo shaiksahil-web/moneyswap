@@ -137,3 +137,26 @@ HPA scaling events
 
 Node health
 
+**8. Screenshots & Results**
+
+Screenshots Included:
+
+Kubernetes pods scaling up/down
+
+HPA status
+
+Grafana dashboards
+
+Frontend UI
+
+GitHub Actions pipeline success
+
+Docker Hub images
+
+Results:
+
+Successful autoscaling
+
+Zero downtime during load
+
+Metrics visible in Grafana
