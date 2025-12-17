@@ -153,6 +153,15 @@ Screenshots Included:
 
 **Frontend UI**
 <img width="1920" height="888" alt="image" src="https://github.com/user-attachments/assets/2a227671-7a1e-47bf-b1aa-8f5eedf0a72c" />
+<img width="1920" height="901" alt="image" src="https://github.com/user-attachments/assets/c40580f7-ffaf-49f5-8c95-ba0e5c870a8f" />
+<img width="1920" height="876" alt="image" src="https://github.com/user-attachments/assets/04d6c263-f694-4a83-8c87-a217b22e54fb" />
+<img width="1920" height="892" alt="image" src="https://github.com/user-attachments/assets/7ed1090d-9107-4746-a797-fb9fca19c4bf" />
+<img width="1920" height="896" alt="image" src="https://github.com/user-attachments/assets/15a7ac06-4f1e-4f33-b4ed-d6baa74d2056" />
+<img width="1920" height="905" alt="image" src="https://github.com/user-attachments/assets/2c4109ca-d492-4af3-96e6-675fa16d9898" />
+<img width="1911" height="897" alt="image" src="https://github.com/user-attachments/assets/4015cf7b-149d-418a-851a-4b204b364c86" />
+
+
+
 
 
 **GitHub Actions pipeline success**
